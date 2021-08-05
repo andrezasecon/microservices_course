@@ -19,10 +19,8 @@ Projeto criado para o curso Micros serviços Java com Spring Boot e Spring Cloud
 
 
 
-# Requisitos para rodar o projeto
+Requisitos para rodar o projeto
 
-- Java 11
-- STS ou qualquer IDE de sua preferencia
 - Docker
 - Repositório de configuração no GitHub (https://github.com/acenelio/ms-course-configs)
 - Excluir do application.properties do projeto hr-server-config as linas abaixo:
@@ -56,53 +54,7 @@ docker network create hr-net
 
 ## Criar os container de de todos os serviços
 
-Caso prefira, as imagens Docker podem ser  baixadas prontas do DockerHub pelo link https://hub.docker.com/repository/docker/andrezasecon/micro-services
-
 Entrar na pasta hr-config-server e abrir um terminal, executar os comandos abaixo
-
-
-
-### Container Postgres
-
-Baixar a imagem, criar as 2 dockers para worker e user
-
-```
-docker pull postgres:12-alpine
-
-docker run -p 5432:5432 --name hr-worker-pg12 --network hr-net -e POSTGRES_PASSWORD=1234567 -e POSTGRES_DB=db_hr_worker postgres:12-alpine
-
-docker run -p 5432:5432 --name hr-user-pg12 --network hr-net -e POSTGRES_PASSWORD=1234567 -e POSTGRES_DB=db_hr_user postgres:12-alpine
-```
-
-## DB_HR_USER
-
-Realizar o seed para inserção de dados no banco
-
-```
-INSERT INTO tb_user (name, email, password) VALUES ('Nina Brown', 'nina@gmail.com', '$2a$10$NYFZ/8WaQ3Qb6FCs.00jce4nxX9w7AkgWVsQCG6oUwTAcZqP9Flqu');
-INSERT INTO tb_user (name, email, password) VALUES ('Leia Red', 'leia@gmail.com', '$2a$10$NYFZ/8WaQ3Qb6FCs.00jce4nxX9w7AkgWVsQCG6oUwTAcZqP9Flqu');
-
-INSERT INTO tb_role (role_name) VALUES ('ROLE_OPERATOR');
-INSERT INTO tb_role (role_name) VALUES ('ROLE_ADMIN');
-
-INSERT INTO tb_user_role (user_id, role_id) VALUES (1, 1);
-INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 1);
-INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 2);
-```
-
-
-
-## DB_HR_WORKER
-
-Realizar o seed para inserção dos dados no banco
-
-```
-INSERT INTO tb_worker (name, daily_Income) VALUES ('Bob', 200.0);
-INSERT INTO tb_worker (name, daily_Income) VALUES ('Maria', 300.0);
-INSERT INTO tb_worker (name, daily_Income) VALUES ('Alex', 250.0);
-```
-
-
 
 ### hr-config-server
 
@@ -158,19 +110,9 @@ docker run -p 8765:8765 --name hr-api-gateway-zuul --network hr-net hr-api-gatew
 
 # Testando se os containers estão ativos
 
-Pelo gerenciador Docker, clicar em Containers
-
-![](C:\Users\andrezasecon\Documents\Workspaces\DevSuperior_suporte\ms-course\docker.PNG)
-
-
-
-Pelo terminal
-
 ```
 docker container ls
 ```
-
-
 
 Neste ponto todos os containers devem estar rodando
 
@@ -198,12 +140,8 @@ leia@gmail.com (ADMIN - acesso a todas as aplicações)
 
 ### Acessar a aplicação Workers
 
-![](C:\Users\andrezasecon\Documents\Workspaces\DevSuperior_suporte\ms-course\post2.PNG)
-
 ### Acessar a aplicação Users
-
-![](C:\Users\andrezasecon\Documents\Workspaces\DevSuperior_suporte\ms-course\post3.PNG)
 
 ### Acessar a aplicação Payroll
 
-### ![](C:\Users\andrezasecon\Documents\Workspaces\DevSuperior_suporte\ms-course\post4.PNG)
+### 
