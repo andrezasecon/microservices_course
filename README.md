@@ -15,7 +15,7 @@ Projeto criado para o curso Micros serviços Java com Spring Boot e Spring Cloud
 
 
 
-![](C:\Users\andrezasecon\Documents\Workspaces\DevSuperior_suporte\ms-course\ms.PNG)
+![](https://github.com/andrezasecon/microservices_course/tree/main/ms-course/ms.PNG)
 
 
 
@@ -160,7 +160,7 @@ docker run -p 8765:8765 --name hr-api-gateway-zuul --network hr-net hr-api-gatew
 
 Pelo gerenciador Docker, clicar em Containers
 
-![](C:\Users\andrezasecon\Documents\Workspaces\DevSuperior_suporte\ms-course\docker.PNG)
+![](https://github.com/andrezasecon/microservices_course/tree/main/ms-course/docker.PNG)
 
 
 
@@ -176,7 +176,7 @@ Neste ponto todos os containers devem estar rodando
 
 Acessar o Eureka pelo http://localhost:8761/ , aqui conseguimos verificar todas as instancias que foram levantadas e se registraram no Eureka.
 
-![](C:\Users\andrezasecon\Documents\Workspaces\DevSuperior_suporte\ms-course\eureka.PNG)
+![](https://github.com/andrezasecon/microservices_course/tree/main/ms-course/eureka.PNG)
 
 
 
@@ -192,18 +192,18 @@ leia@gmail.com (ADMIN - acesso a todas as aplicações)
 
 ### Realizar Login pela requisição oauth
 
-![](C:\Users\andrezasecon\Documents\Workspaces\DevSuperior_suporte\ms-course\post1.PNG)
+![](https://github.com/andrezasecon/microservices_course/tree/main/ms-course/post1.PNG)
 
 
 
 ### Acessar a aplicação Workers
 
-![](C:\Users\andrezasecon\Documents\Workspaces\DevSuperior_suporte\ms-course\post2.PNG)
+![](https://github.com/andrezasecon/microservices_course/tree/main/ms-course/post2.PNG)
 
 ### Acessar a aplicação Users
 
-![](C:\Users\andrezasecon\Documents\Workspaces\DevSuperior_suporte\ms-course\post3.PNG)
+![](https://github.com/andrezasecon/microservices_course/tree/main/ms-course/post3.PNG)
 
 ### Acessar a aplicação Payroll
 
-### ![](C:\Users\andrezasecon\Documents\Workspaces\DevSuperior_suporte\ms-course\post4.PNG)
+### ![](https://github.com/andrezasecon/microservices_course/tree/main/ms-course/post4.PNG)
