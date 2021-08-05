@@ -1,4 +1,4 @@
-*PROJETO MICROSERVICES COM SPRING BOOT E SPRING CLOUD**
+# PROJETO MICROSERVICES COM SPRING BOOT E SPRING CLOUD
 
 Projeto criado para o curso Micros serviços Java com Spring Boot e Spring Cloud do professor Nélio Alves (https://www.udemy.com/course/microsservicos-java-spring-cloud/) e consiste em um serviço Spring Boot Eureka que faz o gerenciamento dinâmico, escalabilidade e balanceamento de carga, onde nossos micro serviços serão registrados.
 
